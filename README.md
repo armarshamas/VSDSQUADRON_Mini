@@ -1,0 +1,1 @@
+Create GitHub repo. Windows OS, 1TB HDD, 16GB RAM. Next Task - Allocate 8GB RAM, 100GB HDD for Oracle Virtual Machine and install RISC-V GNU Toolchain first, then install Yosys, iverilog, gtkwave. Refer to this course to install Ubuntu 20.04 using VM
