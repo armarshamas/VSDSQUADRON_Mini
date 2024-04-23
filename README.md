@@ -1,5 +1,6 @@
 Task 1:
 Install RISC-V GNU Toolchain 
+
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/23158c82-c463-440f-9260-cc34f4fb5b1c)
 
 install Yosys, iverilog, gtkwave
@@ -20,6 +21,7 @@ $ sudo make install
 
 iverilog:
 sudo apt-get install iverilog
+
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/0bc2b5bd-a124-4416-bd97-86a692300c78)
 
 gtkwave:
