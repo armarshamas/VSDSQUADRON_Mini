@@ -39,3 +39,92 @@ sudo apt install gtkwave
 
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/8deb50fc-2602-47cd-a561-23c87864102f)
 
+Task 2:
+## R-type Instructions
+R-type instructions are used for register-to-register operations, such as arithmetic and logical  operations. 
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/48140c5b-fd00-4463-b43e-c48eb1b517ba)
+
+They have the following format:
+
+```
+31 25 24 20 19 15 14 12 11 7 6 0
+funct7 rs2 rs1 funct3 rd opcode
+```
+
+- `funct7`: This 7-bit field specifies the exact operation to be performed, such as addition, subtraction, or bitwise operations.
+- `rs2`, `rs1`: These 5-bit fields specify the source registers for the operation.
+- `funct3`: This 3-bit field further qualifies the operation, such as the type of comparison for a branch instruction.
+- `rd`: This 5-bit field specifies the destination register for the result of the operation.
+- `opcode`: This 7-bit field identifies the instruction as an R-type operation.
+
+Examples of R-type instructions include `add`, `sub`, `and`, `or`, `xor`, and `sll` (shift left logical).
+
+## I-type Instructions
+I-type instructions are used for immediate and load operations. 
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/8fce06bb-89b4-4510-99ca-9272032e77a3)
+
+
+ They have the following format:
+
+```
+31 20 19 15 14 12 11 7 6 0
+imm[11:0] rs1 funct3 rd opcode
+```
+
+- `imm[11:0]`: This 12-bit field contains a signed immediate value, which is used in operations like addition with an immediate operand or loading a value from memory.
+- `rs1`: This 5-bit field specifies the source register for the operation.
+- `funct3`: This 3-bit field further qualifies the operation, such as the type of load or arithmetic operation.
+- `rd`: This 5-bit field specifies the destination register for the result of the operation.
+- `opcode`: This 7-bit field identifies the instruction as an I-type operation.
+
+Examples of I-type instructions include `addi`, `lw` (load word), and `jalr` (jump and link register).
+
+## S-type Instructions
+S-type instructions are used for store operations, where a value is stored from a register to memory. 
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/aab84bf9-5c1d-42af-a7dd-86338c6362d0)
+
+
+ They have the following format:
+
+```
+31 25 24 20 19 15 14 12 11 7 6 0
+imm[11:5] rs2 rs1 funct3 imm[4:0] opcode
+```
+
+- `imm[11:5]`, `imm[4:0]`: These two 5-bit fields combine to form a 12-bit signed offset used in the store operation.
+- `rs2`: This 5-bit field specifies the source register for the value to be stored.
+- `rs1`: This 5-bit field specifies the base register for the memory address.
+- `funct3`: This 3-bit field specifies the type of store operation, such as `sb` (store byte) or `sw` (store word).
+- `opcode`: This 7-bit field identifies the instruction as an S-type operation.
+
+The most common S-type instruction is `sw` (store word), which stores the contents of a register to memory at the address specified by the base register plus the 12-bit signed offset.
+
+## B-type Instructions
+B-type instructions are used for conditional branch operations. 
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/b2de36ab-b068-4354-a65f-cd8c5c0e5fcd)
+
+ 
+They have the following format:
+
+```
+31 31 25 24 20 19 15 14 12 11 7 6 0
+imm[12] imm[10:5] rs2 rs1 funct3 imm[4:1] imm[11] opcode
+```
+
+- `imm`, `imm[10:5]`, `imm[4:1]`, `imm`: These fields combine to form a 13-bit signed PC-relative offset used in the branch operation.
+- `rs2`, `rs1`: These 5-bit fields specify the source registers for the comparison.
+- `funct3`: This 3-bit field specifies the type of branch condition, such as `beq` (branch if equal) or `bne` (branch if not equal).
+- `opcode`: This 7-bit field identifies the instruction as a B-type operation.
+
+The B-type instructions allow for conditional jumps based on the comparison of two register values, enabling control flow in RISC-V programs.
+
+These four instruction formats (R, I, S, and B) cover the majority of the RISC-V instruction set, providing a simple and efficient way to encode a wide range of operations. The RISC-V ISA also includes additional formats, such as U-type and J-type, for other types of instructions like jumps and 20-bit immediate loads.
+
+The key design principles of the RISC-V ISA are simplicity, regularity, and extensibility. By keeping the instruction set small and uniform, RISC-V makes it easier to implement efficient hardware and software for a wide range of applications. The modular nature of the ISA also allows for custom extensions to be added as needed, enabling RISC-V to be tailored to specific use cases.
+
+
+
