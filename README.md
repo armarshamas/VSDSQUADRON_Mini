@@ -4,6 +4,9 @@ Install RISC-V GNU Toolchain
 
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/23158c82-c463-440f-9260-cc34f4fb5b1c)
 
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/90f3978e-38ff-4dec-984f-3086b0e3914c)
+
+
 install Yosys, iverilog, gtkwave
 
 **Yosys**
@@ -27,8 +30,7 @@ $ sudo make install
 
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/a4c6dc0a-1e3b-41c0-b4f1-69a30904f848)
 
-**iverilog:
-**
+**iverilog:**
 sudo apt-get install iverilog
 
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/0bc2b5bd-a124-4416-bd97-86a692300c78)
