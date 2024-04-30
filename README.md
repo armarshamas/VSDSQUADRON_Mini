@@ -133,6 +133,16 @@ The key design principles of the RISC-V ISA are simplicity, regularity, and exte
 
 ### Task 3: Lab C codes
 
-Simple C code implementation:
+## Simple C code implementation:
 
 ![Screenshot from 2024-04-29 23-02-09](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/e86e8598-6778-42d7-b7f5-b7a30e0ea8c5)
+
+## RISC V Object
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/5fb8df39-fe65-4408-8606-f6c6094370c2)
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/c0bd8d16-c119-4a04-bb5b-cb84dbec5159)
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/3b4d7ebc-8dac-46e6-8b25-16287fca83df)
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/7959f975-b493-4a8f-9f73-4284bf9f640f)
