@@ -1,4 +1,4 @@
-### Task 1: Tools Installations
+## Task 1: Tools Installations
 
 Install RISC-V GNU Toolchain 
 
@@ -43,7 +43,7 @@ sudo apt install gtkwave
 
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/8deb50fc-2602-47cd-a561-23c87864102f)
 
-### Task 2: RISC V ISA Understanding
+## Task 2: RISC V ISA Understanding
 
 ## R-type Instructions
 R-type instructions are used for register-to-register operations, such as arithmetic and logical  operations. 
@@ -131,7 +131,7 @@ These four instruction formats (R, I, S, and B) cover the majority of the RISC-V
 
 The key design principles of the RISC-V ISA are simplicity, regularity, and extensibility. By keeping the instruction set small and uniform, RISC-V makes it easier to implement efficient hardware and software for a wide range of applications. The modular nature of the ISA also allows for custom extensions to be added as needed, enabling RISC-V to be tailored to specific use cases.
 
-### Task 3: Lab C codes
+## Task 3: RISC Simulation
 
 ## Simple C code implementation:
 
@@ -146,3 +146,36 @@ The key design principles of the RISC-V ISA are simplicity, regularity, and exte
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/3b4d7ebc-8dac-46e6-8b25-16287fca83df)
 
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/7959f975-b493-4a8f-9f73-4284bf9f640f)
+
+## Task 4: Spike Simulation
+
+# Spike installation
+
+```
+$ git clone https://github.com/riscv/riscv-isa-sim.git      
+$ cd riscv-isa-sim    
+$ mkdir build  
+$ cd build  
+$ ../configure --prefix=/opt/riscv
+$ sudo apt-get install device-tree-compiler
+$ make  
+$ sudo apt update  
+$ sudo apt install g++-8  
+$ make CXX=g++-8  
+$ sudo make install  
+$ echo 'export PATH=$PATH:/opt/riscv/bin' >> ~/.bashrc  
+$ source ~/.bashrc
+```
+
+# pk installation
+
+```
+$ git clone https://github.com/riscv/riscv-pk.git    
+$ cd riscv-pk    
+$ mkdir build    
+$ cd build      
+$ ../configure --prefix=/home/vsduser/riscv --host=riscv64-unknown-elf --with-arch=rv64gc    
+$ make    
+$ sudo make install
+```
+
