@@ -179,3 +179,7 @@ $ make
 $ sudo make install
 ```
 
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/d86f205d-f873-4315-94f6-04bc059f24a8)
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/14f8517b-6195-42e0-a9ac-a8cdd1564d03)
+
