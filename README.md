@@ -43,7 +43,7 @@ sudo apt install gtkwave
 
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/8deb50fc-2602-47cd-a561-23c87864102f)
 
-## Task 2: RISC V ISA Understanding
+## Task 2: RISC V ISA Identify instruction type and exact 32-bit instruction code in the instruction type format
 
 ## R-type Instructions
 R-type instructions are used for register-to-register operations, such as arithmetic and logical  operations. 
@@ -147,8 +147,7 @@ The key design principles of the RISC-V ISA are simplicity, regularity, and exte
 
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/7959f975-b493-4a8f-9f73-4284bf9f640f)
 
-## Task 4: Spike Simulation
-
+## Task 4: SPIKE Simulation and observation with -O1 and -Ofast
 # Spike installation
 
 ```
@@ -182,4 +181,39 @@ $ sudo make install
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/d86f205d-f873-4315-94f6-04bc059f24a8)
 
 ![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/14f8517b-6195-42e0-a9ac-a8cdd1564d03)
+
+## Task 5 : Use this RISC-V Core Verilog netlist and testbench for functional simulation experiment
+
+IR - 32 bit Instruction
+RD - Destination Register
+A & B - Source Registers
+ALUOUT - Output
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/b437c3e3-6a6f-4e08-b051-5a7392e20b05)
+
+
+# Instruction 1: ADD R6, R2, R1
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/0147e6f4-81c9-4de5-aed0-32fa8b60e967)
+
+
+# Instruction 2: SUB R7, R1, R2
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/68b930bd-e914-445b-b6ea-f9b63ec68d0c)
+
+
+# Instruction 3: AND R8, R1, R3
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/5b1735c2-052d-4926-a93e-788db0a6e32a)
+
+
+# Instruction 4: OR R9, R2, R5
+
+# Instruction 5: XOR R10, R1, R4
+
+# Instruction 6: SLT R1, R2, R4
+
+# Instruction 7: ADDI R12, R4, 5
+
+Instruction 8: BEQ R0, R0, 15
 
