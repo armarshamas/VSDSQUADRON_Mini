@@ -204,16 +204,30 @@ ALUOUT - Output
 
 # Instruction 3: AND R8, R1, R3
 
-![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/5b1735c2-052d-4926-a93e-788db0a6e32a)
-
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/83c662b8-8911-47b7-accc-920a74ed792b)
 
 # Instruction 4: OR R9, R2, R5
 
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/aa256087-1e76-4eb4-9796-3e48ff4a29dc)
+
+
 # Instruction 5: XOR R10, R1, R4
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/2fea4c3b-74e6-4d65-8e02-4886737b9ee0)
+
 
 # Instruction 6: SLT R1, R2, R4
 
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/4e2d1c93-5fed-4ab5-9704-2fe9f4d28d84)
+
+
 # Instruction 7: ADDI R12, R4, 5
 
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/81ffe1e5-f89a-4d99-8d0b-bbc6443ba5b6)
+
+
 Instruction 8: BEQ R0, R0, 15
+
+![image](https://github.com/armarshamas/VSDSQUADRON_Mini/assets/73387351/a20b4327-d1f4-4d7c-833d-1297b0bd4383)
+
 
